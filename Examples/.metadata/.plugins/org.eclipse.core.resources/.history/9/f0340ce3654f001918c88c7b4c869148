@@ -1,0 +1,36 @@
+	import java.util.Scanner;
+public class thingy2 {
+
+
+		
+		/**
+		 * @param args
+		 */
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Scanner keyboard = new Scanner(System.in);
+			String jimmy, jimmy2, jimmy3;
+			System.out.println("enter three word:");
+			jimmy = keyboard.toString();
+			jimmy2 = keyboard.toString();
+			jimmy3 = keyboard.toString();
+			
+			jimmy=jimmy+jimmy2+jimmy3;
+			StringBuffer jammy=new StringBuffer(jimmy);
+			jammy.append(jimmy2);
+			jammy.append(jimmy3);
+		
+			
+			
+
+			System.out.println("string:" +jimmy);
+			System.out.println("stringbuffer:" +jammy);
+			
+			
+			keyboard.close();
+		
+
+		}
+
+	}
+

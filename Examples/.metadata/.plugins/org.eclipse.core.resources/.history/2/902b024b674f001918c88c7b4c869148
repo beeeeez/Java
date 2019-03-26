@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class thing1{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		float ddistance, miles, price, ans;
+
+		System.out.println("Enter the driving distance:");
+		ddistance = keyboard.nextFloat();
+		System.out.println("Enter the miles per gallon:");
+		miles = keyboard.nextFloat();
+		System.out.println("Enter the price per gallon");
+		price = keyboard.nextFloat();
+		
+		ans = (ddistance/miles)*price;
+		
+		
+
+		System.out.println("The cost of driving is$:" + ans);
+
+		
+		
+		keyboard.close();
+	
+
+	}
+
+}
