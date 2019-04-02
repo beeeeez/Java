@@ -1,0 +1,77 @@
+
+package week2inclas;
+
+
+
+import java.util.Scanner;
+public class rockypaper {
+
+	public enum stuff {rock, paper, scissors};
+	
+	public static void main(String[] args) {
+	Scanner keyboard = new Scanner(System.in);
+	boolean dooped = true;
+	
+	int tums = (int)Math.random() * 3+1;
+	if(tums<1) {
+		tums = 0;
+	}
+	boolean ugh = false;
+	System.out.println("enter rock paper or scissors : ");
+	String fudge = keyboard.nextLine();
+		for(stuff meh: stuff.values()) {
+			if(meh.toString().compareTo(fudge)==0);
+			ugh = true;
+		}
+		if (ugh==false) {
+			System.out.println("type it better :L");
+			System.exit(0);
+		}
+		
+	
+
+
+	System.out.println("computer picked: "+stuff.values()[tums].toString());
+	
+	if(stuff.values()[tums].toString().compareTo(fudge)==0) {
+		System.out.println("its a tie");
+	}
+	else{
+		switch (stuff.values()[tums].toString()) {
+		case "rock":
+			if(fudge.compareTo("paper")==0) {
+				System.out.println("you win");
+			}
+			else {
+				System.out.println("you lose");
+			}
+			break;
+		case "paper":
+			if(fudge.compareTo("scissors")==0) {
+				System.out.println("you win");
+			}
+			else {
+				System.out.println("you lose");
+			}
+			break;		
+		case "scissors":
+		if(fudge.compareTo("rock")==0) {
+			System.out.println("you win");
+		}
+		else {
+			System.out.println("you lose");
+		}
+		break;
+		default:
+			System.out.println("wat");
+			break;
+		}
+	}
+
+		System.exit(0);
+	
+	
+	
+	
+	}
+}

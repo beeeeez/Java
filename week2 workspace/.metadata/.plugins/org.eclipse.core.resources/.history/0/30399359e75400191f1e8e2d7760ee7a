@@ -1,0 +1,13 @@
+package week2inclas;
+
+
+
+public class randomplate {
+
+	public static void main(String[] args) {
+		int tums = (int)Math.random() * 10+1;
+	
+		
+	}
+	
+}

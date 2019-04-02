@@ -1,0 +1,16 @@
+package week2inclas;
+
+public class thingy {
+
+	public enum stuff {Fingers, Toes, Nose}
+	
+	
+	public static void main(String[] args) {
+		System.out.println(stuff.Fingers);
+		
+		
+		
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+package week2inclas;
+
+
+
+public class randomplate {
+
+	public static void main(String[] args) {
+
+			int tums = (int)Math.random() * 26+1;
+			char b = (char)(tums+26);
+			System.out.println(b);
+		
+		
+		
+		
+		
+	}
+	
+}
