@@ -1,0 +1,37 @@
+package lab2;
+import java.util.Scanner;
+public class lab2part1 {
+	public static void main(String[] args) {
+	Scanner keyboard = new Scanner(System.in);		
+	System.out.println("weight in lbs: ");
+	String wgt = keyboard.nextLine();
+	System.out.println("height in inches: ");
+	String hgt = keyboard.nextLine();
+	System.out.println("age in years: ");
+	String age = keyboard.nextLine();
+	System.out.println("male or female (m or f): ");
+	String sex = keyboard.nextLine();
+	System.out.println("activity level (1 - 4) ");
+	String act = keyboard.nextLine();
+	
+	switch(sex) {
+	case "m":
+		sex="male";
+		double glun = 655 + ((4.3 * Double.parseDouble(wgt)) + (4.7*Double.parseDouble(hgt))) - (4.7*Double.parseDouble(age));
+		
+		break;
+	case "f":
+		sex="female";
+		double glun = 66 + ((6.3 * Double.parseDouble(wgt)) + (12.9*Double.parseDouble(hgt))) - (6.8*Double.parseDouble(age));
+		break;
+	default: 
+		System.out.println("dun goof'd");
+		System.exit(0);
+	}
+		
+	System.out.println("a "+ sex + "of those measurements should eat "+ glun +" candy bars per day to maintain the same weight.");
+	
+	}
+	
+	
+}
