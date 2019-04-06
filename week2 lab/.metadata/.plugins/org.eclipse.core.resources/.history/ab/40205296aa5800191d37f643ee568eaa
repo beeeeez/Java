@@ -1,0 +1,45 @@
+package lab2;
+
+import java.util.*;
+
+import javafx.scene.chart.ScatterChart;
+
+public class lab3part3 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int whole=0;
+		double dec=0;
+		System.out.println("enter a numerator : ");
+		int num = scan.nextInt();
+
+		if(num==0) {
+			System.out.println("done");
+			System.exit(0);
+		}
+		
+		System.out.println("enter a denominatoasdkngh,n : ");
+		int den = scan.nextInt();
+		
+
+		if(num/den<1) {
+			System.out.println(num + " / " +den+" is proper");
+		}
+		else if(num/den>1) {
+			whole=num/den;
+			dec=(num/den)-whole;
+			if (dec == 0) {
+				System.out.println(num + " / " +den+" is improper and is reduced to "+whole);
+			}
+			else { 
+				for(int i = 0; i<whole;i++) {
+					num=num-den;
+				}
+				System.out.println(num + " / " +den+" is improper and its mixed fraction is  "+whole+" + " + num + " / "+ den);
+				
+			}
+		}
+		
+		
+		
+	}
+}

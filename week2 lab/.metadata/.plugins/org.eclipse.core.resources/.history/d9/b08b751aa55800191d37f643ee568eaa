@@ -1,0 +1,44 @@
+package lab2;
+
+import java.util.*;
+import java.util.List;
+import java.util.Arrays;
+
+public class lab2part2 {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		String buildmeBaby = "";
+
+		List<Integer> intList = new ArrayList<Integer>();
+
+		System.out.println("enter a row of numbers : ");
+		StringBuffer blub = new StringBuffer(keyboard.nextLine());
+		for (int i = 0; i < blub.length(); i++) {
+			char j = blub.charAt(i);
+			if (j == ' ') {
+				intList.add(Integer.parseInt(buildmeBaby));
+				buildmeBaby = "";
+			} else if (j == '0' && buildmeBaby == "") {
+
+				int hold = 0, flub=0;
+				
+				for (int jimmy : intList) {
+					if (hold < jimmy) {
+						hold = jimmy;
+						flub=1;
+					}
+					else if (hold == jimmy) {
+						flub++;
+					}
+					
+				}
+			} else {
+				buildmeBaby += j;
+			}
+
+		}
+
+	}
+
+
+}
